@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.07"
+            android:textAlignment="center" />
+
+        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textSize="15sp"
+            android:id="@+id/txtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.08"
+            android:inputType="text" />
+
+        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textSize="15sp"
+            android:id="@+id/txtSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.08"
+            android:inputType="text|"/>
+
+        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textSize="15sp"
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.08"
+            android:inputType="textEmailAddress"/>
+
+        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textSize="15sp"
+            android:id="@+id/txtHomeTelNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.08"
+            android:inputType="phone"/>
+
+        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textSize="15sp"
+            android:id="@+id/txtWorkTelNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.08"
+            android:inputType="phone" />
+
+        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textSize="15sp"
+            android:id="@+id/txtCelPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.08"
+            android:inputType="phone" />
+
+        <Button android:textAppearance="@style/AlertDialog.AppCompat.Light"
+            android:textColorHighlight="#0efc1e"
+            android:textColorHint="@color/abc_primary_text_material_light"
+            android:id="@+id/btnNextToVehicle"
+            android:background="0x1060000"
+            android:longClickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/create"
+            android:layout_weight="0.08"
+            android:onClick="ToVehicleDetails"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>
