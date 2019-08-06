@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">Android-Crud</string>
-    <string name="create">Create</string>
+    <string name="app_name">Car Doctor</string>
 </resources>

@@ -1,91 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1.0">
+    android:paddingTop="10dp"
+    tools:context="com.weebly.ghostcoder.carservices.Main"
+    android:background="@drawable/main_background"
+    android:weightSum="1">
 
-    <LinearLayout android:orientation="vertical"
+    <Button
+        android:id="@+id/btnBegin"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="1.0"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentStart="true"
+        android:hint="Create New Record" />
 
-        <TextView android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textSize="22sp"
-            android:textColor="#ffffff"
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:paddingTop="1dp"
+        android:layout_below="@+id/btnBegin">
 
-            android:layout_weight="0.07"
-            android:textAlignment="center" />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="550dp"
+            android:id="@+id/txtMainList"
+            android:textColorHint="#c48585"
+            android:textColorLink="#356416"
 
-        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textSize="15sp"
-            android:id="@+id/txtFullName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="0.08"
-            android:inputType="text" />
-
-        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textSize="15sp"
-            android:id="@+id/txtSurname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="0.08"
-            android:inputType="text|"/>
-
-        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textSize="15sp"
-            android:id="@+id/txtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="0.08"
-            android:inputType="textEmailAddress"/>
-
-        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textSize="15sp"
-            android:id="@+id/txtHomeTelNo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="0.08"
-            android:inputType="phone"/>
-
-        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textSize="15sp"
-            android:id="@+id/txtWorkTelNo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="0.08"
-            android:inputType="phone" />
-
-        <EditText android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textSize="15sp"
-            android:id="@+id/txtCelPhoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="0.08"
-            android:inputType="phone" />
-
-        <Button android:textAppearance="@style/AlertDialog.AppCompat.Light"
-            android:textColorHighlight="#0efc1e"
-            android:textColorHint="@color/abc_primary_text_material_light"
-            android:id="@+id/btnNextToVehicle"
-            android:background="0x1060000"
-            android:longClickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/create"
-            android:layout_weight="0.08"
-            android:onClick="ToVehicleDetails"
-            android:textAlignment="center" />
+            />
     </LinearLayout>
+
 </RelativeLayout>
