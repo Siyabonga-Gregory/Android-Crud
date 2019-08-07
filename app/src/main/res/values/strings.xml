@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Car Doctor</string>
+    <string name="create_new_record">Create New Record</string>
 </resources>

@@ -17,7 +17,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:hint="Create New Record" />
+        android:hint="@string/create_new_record" />
 
     <LinearLayout
         android:orientation="vertical"
